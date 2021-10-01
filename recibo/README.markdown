@@ -3,6 +3,6 @@
 to access the full project:
 
 https://rolim8.github.io/personal/recibo/src/index.html
-<br/>
+<br/> ou <br/>
 https://git.io/JgACj
 
