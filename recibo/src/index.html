@@ -28,16 +28,11 @@
 	
   </div>
   
-  <p class="receipt-title"><br> Recibo </p>
+  <p class="receipt-title"><br>Recibo </p>
   
   <div class="receipt-section">
-    <span class="receipt-label text-large">Data:</span>
-      <span class="text-large">
-        <script>
-          document.write(new Date().toLocaleDateString());
-        </script>
 
-    <span class="receipt-label"><br>Valor: </span> R$
+    <span class="receipt-label">Valor: </span> R$
     <script type="text/javascript">
       document.write(preco + ",00")
     </script>
@@ -63,5 +58,11 @@
   <div class="receipt-signature col-xs-1">
     <p class="receipt-line"></p>
     <p>Orlando Sat</p>
-  </div>  
+  </div>
+  
+  <p>Lavras da Mangabeira, Ceará,
+    <script>
+      document.write(new Date().toLocaleDateString());
+    </script>
+  </p>
 </div>
