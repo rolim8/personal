@@ -6,10 +6,9 @@
   </head>
   
   <script type="text/javascript">
-    var nome = prompt('Digite seu nome:');
-    var cpf = prompt('Digite seu cpf:');
+    var nome = prompt('Digite seu nome:', 'Nome do cliente');
     var preco = prompt('Informe o preço do serviço:', '0');
-    var servico = prompt('Serviço prestado:');
+    var servico = prompt('Serviço prestado:', 'Serviço Prestado').toUpperCase().bold();
   </script>
   
   
@@ -28,41 +27,42 @@
 	
   </div>
   
-  <p class="receipt-title"><br>Recibo </p>
+  <p class="receipt-title"><br> Recibo </p>
   
-  <div class="receipt-section">
+  <div class="receipt-section", contentEditable="true">
+    <span class="receipt-label text-large">Data:</span>
+      <span class="text-large">
+        <script>
+          document.write(new Date().toLocaleDateString());
+        </script>
 
-    <span class="receipt-label">Valor: </span> R$
+    <span class="receipt-label"><br>Valor: </span> R$
     <script type="text/javascript">
       document.write(preco + ",00")
     </script>
     
     <span class="receipt-label"><br>Contratante:</span>
     <script type="text/javascript">
-      document.write(nome + "(" + cpf + ")")
+      document.write(nome)
     </script>
-    
-    <span class="receipt-label"><br>Contratado: Orlando Sat (04.921.682/0001-26)</span>
-
   </div>
   
-  <div class="receipt-section">
+  <div class="receipt-section", contentEditable="true">
     <script type="text/javascript">
-      document.write("<br>Recebi de " + nome + " a importância de R$ " + preco + ",00)
-    </script>
-    <script type="text/javascript">
-      document.write("Referente à(o) " + servico)
+      document.write('<br>Referente à(o) ' + servico + '<br>Pelo que firmo o presente recibo em/uma via, para fins de quitação. ')
     </script>
   </div>
 
   <div class="receipt-signature col-xs-1">
     <p class="receipt-line"></p>
-    <p>Orlando Sat</p>
-  </div>
+    <p>Orlando Leite Rolim</p>
+  </div>  
   
-  <p>Lavras da Mangabeira, Ceará,
-    <script>
-      document.write(new Date().toLocaleDateString());
-    </script>
-  </p>
+  <div>
+    <p> Lavras da Mangabeira, Ceará,
+      <script>
+        document.write(new Date().toLocaleDateString());
+      </script>
+    </p> 
+  </div>
 </div>
