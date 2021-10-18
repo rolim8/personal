@@ -6,8 +6,8 @@ body {
 }
 .receipt-header{
   text-align: center;
-  style=" font-family:Times New Roman; 
-  font-size:16.2px; 
+  style=" font-family:Times New Roman;
+  font-size:10px;
   color:#000000;
 }
 .receipt-main {
@@ -43,6 +43,7 @@ body {
 .receipt-signature .receipt-line {
   margin-bottom: 10px;
   border-bottom: 1px solid #000;
+  width: 50%;
 }
 .receipt-signature p {
   text-align: center;
