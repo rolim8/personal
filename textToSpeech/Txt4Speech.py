@@ -9,4 +9,3 @@ language = 'pt'
 myobj = gTTS(text=mytext, lang=language, slow=False)
 
 myobj.save("eae.mp3")
-
